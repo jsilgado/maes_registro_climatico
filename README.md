@@ -10,7 +10,28 @@ Se creará una aplicación de consulta de datos del clima de diferentes países 
 ![image](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
 ![image](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## Actividad 1 - Creación del proyecto
+## Actividad 1 - Fundamentos de RESTful APIs
+
+- Un API **Application Programming Interface** es un conjunto de funcionalidades o recursos que nos expone un sistema para poder interactuar con él desde otro sistema. Sin importar el lenguaje en el que esté programado.
+- Rest: **Representational State Transfer**, es un estilo de arquitectura de software para realizar una comunicación cliente-servidor. Se apoya en el protocolo HTTP para la comunicación al servidor y los mensajes que se envían y reciben pueden estar en XML o JSON.
+
+Por lo tanto: API RESTful es un API que fue diseñada usando la arquitectura REST.
+
+![Api rest](https://github.com/jsilgado/maes_registro_climatico/blob/master/images/450px-API-Rest.png) 
+
+Imagen: API REST- Autor: [Seobility](https://www.seobility.net/es/wiki/API_REST) - Licencia: [CC BY-SA 4.0](https://www.seobility.net/es/wiki/Creative_Commons_License_BY-SA_4.0) 
+
+Api rest públicas: 
+- [Platzi Fake Store API](https://fakeapi.platzi.com/en/rest/users/)
+- [Quotes](https://quotes.rest/) con Swagger (Necesita registrar)
+- [Random User](https://randomuser.me/)
+- [Pokeapi](https://pokeapi.co/)
+- [The Rick and Morty API](https://rickandmortyapi.com/) 
+- [Fake Store API](https://fakestoreapi.com)
+- [Unsplash](https://unsplash.com/developers) (Necesita registrar)
+
+
+## Actividad 2 - Creación del proyecto
 
 - Crea un proyecto spring boot utlizando https://start.spring.io/ con las siguientes características:
 ```bash
@@ -19,7 +40,7 @@ Languaje: Java
 Spring boot: 3.2.3
 Dependencies: Spring Web, Lombok
 ```
-![App Screenshot](https://github.com/jsilgado/maes_registro_climatico/blob/master/images/Spring%20Initializr.png)
+![Imagen](https://github.com/jsilgado/maes_registro_climatico/blob/master/images/Spring%20Initializr.png)
 
 - Impórtalo en eclipse.
 - Crear un package "controller" en com.maes, quedando com.maes.controller.
@@ -49,7 +70,7 @@ Nota: se puede cambiar la extensión del fichero application.properties a applic
 
 #### Entrega: Sube el código a tu carpeta git con tu nombre en https://github.com/jsilgado/maes_registro_climatico/tree/master/alumnos
 
-## Actividad 2 - Modelado de datos
+## Actividad 3 - Modelado de datos
 - Crear un package "domain" quedando com.maes.domain
 - Crear las clases de entidades de dominio con sus atributos:
 #### Pais
