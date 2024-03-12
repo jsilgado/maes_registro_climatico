@@ -106,28 +106,20 @@ Crea un grupo de 3 personas por cercanía en el aula. Cada grupo elige una aplic
 
 Posteriormente se indica a cada persona del grupo a que rol de expertos van a pertenecer: A (Request), B (Response), C (Pruebas). 
 
-[Documentación de experto](https://www.baeldung.com/spring-boot-yaml-vs-properties) 
+[Documentación de experto](https://github.com/jsilgado/maes_registro_climatico/blob/master/Actividad%204.pdf) 
 
-Estudio individual:  Cada estudiante desde su asiento, estudia en profundidad su parte, asegurándose de comprenderla completamente. Se recomienda tomar notas, realizar resúmenes y preparar preguntas.
-Grupos de expertos: Los estudiantes del mismo grupo se reúnen en una parte del aula. Comparten sus conocimientos, debaten, resuelven dudas y se convierten en especialistas en su tema.
-Intercambio de información: Los estudiantes regresan a sus grupos originales y se convierten en docentes de su pieza.
-Objetivo: A partir de las funcionalidades seleccionadas anteriormente.
--	A. Front: Desarrollo de las pantallas. El objetivo es diseñar las               llamadas request hacia el servidor para obtener datos, persistir o modificar. Por cada petición se requiere:
-	url.
-	parámetros requeridos.
-	parámetros opcionales.
-	Verbo http (GET, POST, UPDATE o DELETE).
+- Estudio individual:  Cada estudiante desde su asiento, estudia en profundidad su parte, asegurándose de comprenderla completamente. Se recomienda tomar notas, realizar resúmenes y preparar preguntas.
+- Grupos de expertos: Los estudiantes del mismo grupo se reúnen en una parte del aula. Comparten sus conocimientos, debaten, resuelven dudas y se convierten en especialistas en su tema.
+- Intercambio de información: Los estudiantes regresan a sus grupos originales y se convierten en docentes de su pieza.
 
--	B. Back: Desarrollo de la lógica de negocio. Por cada petición:
-	json de salida.
-	Códigos http posibles.
-	A que entidades de la base de datos podría se utilizarían.
+Ejercicio: A partir de las funcionalidades seleccionadas anteriormente.
+**A. Request**: El objetivo es diseñar las llamadas request hacia el servidor para obtener datos, persistir o modificar. Por cada petición se requiere: URL, parámetros requeridos, parámetros opcionales y verbo http (GET, POST, UPDATE o DELETE).
 
--	C. Pruebas: Desarrollo de las pruebas de las llamadas. Por cada petición hay que indicar que pruebas se realizarían indicando: 
-	Contexto (given). Estado inicial.
-	Acción (when). Qué se quiere probar.
-	Resultado (then): Verificar el resultado esperado.
-El grupo generará un documento pdf con el ejercicio resuelto que se enviará por correo electrónico al docente hasta el día antes de la presentación. En la clase siguiente el grupo expondrá durante 10 minutos sus funcionalidades y el desarrollo de las peticiones, pudiendo ser preguntado por el docente y los demás estudiantes.
+**B. Response**: Desarrollo de la lógica de negocio. Por cada petición:	json de salida, vódigos http posibles y qué entidades de la base de datos podrían estar involucradas.
+
+**C. Pruebas**: Desarrollo de las pruebas de las llamadas. Por cada petición hay que indicar que pruebas se realizarían indicando:  Contexto (given). Estado inicial. Acción (when). Qué se quiere probar. Resultado (then): Verificar el resultado esperado.
+
+El grupo generará un documento pdf con el ejercicio resuelto que se enviará por correo electrónico al docente hasta el día antes de la fecha de presentación. En la clase siguiente el grupo expondrá durante 10 minutos sus funcionalidades y el desarrollo de las peticiones, pudiendo ser preguntado por el docente y los demás estudiantes.
 
 
 ## Autor
