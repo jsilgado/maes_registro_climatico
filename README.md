@@ -100,6 +100,36 @@ Nota: se puede cambiar la extensión del fichero application.properties a applic
 | `mes` | `Integer` | **Required**. Mes del registro |
 | `temperatura` | `Double` | **Required**. Temperatura |
 
+## Actividad 4 - Estándares y buenas prácticas
+
+Crea un grupo de 3 personas por cercanía en el aula. Cada grupo elige una aplicación móvil o página web que les interese. Una vez elegida tendrán que elegir 4 funcionalidades que podría tener esa aplicación de tipo: obtención de datos con filtro y paginación, inserción, modificación o borrado de datos. Actividad similar realizada en la unidad 2.
+
+Posteriormente se indica a cada persona del grupo a que rol de expertos van a pertenecer: A (Request), B (Response), C (Pruebas). 
+
+[Documentación de experto](https://www.baeldung.com/spring-boot-yaml-vs-properties) 
+
+Estudio individual:  Cada estudiante desde su asiento, estudia en profundidad su parte, asegurándose de comprenderla completamente. Se recomienda tomar notas, realizar resúmenes y preparar preguntas.
+Grupos de expertos: Los estudiantes del mismo grupo se reúnen en una parte del aula. Comparten sus conocimientos, debaten, resuelven dudas y se convierten en especialistas en su tema.
+Intercambio de información: Los estudiantes regresan a sus grupos originales y se convierten en docentes de su pieza.
+Objetivo: A partir de las funcionalidades seleccionadas anteriormente.
+-	A. Front: Desarrollo de las pantallas. El objetivo es diseñar las               llamadas request hacia el servidor para obtener datos, persistir o modificar. Por cada petición se requiere:
+	url.
+	parámetros requeridos.
+	parámetros opcionales.
+	Verbo http (GET, POST, UPDATE o DELETE).
+
+-	B. Back: Desarrollo de la lógica de negocio. Por cada petición:
+	json de salida.
+	Códigos http posibles.
+	A que entidades de la base de datos podría se utilizarían.
+
+-	C. Pruebas: Desarrollo de las pruebas de las llamadas. Por cada petición hay que indicar que pruebas se realizarían indicando: 
+	Contexto (given). Estado inicial.
+	Acción (when). Qué se quiere probar.
+	Resultado (then): Verificar el resultado esperado.
+El grupo generará un documento pdf con el ejercicio resuelto que se enviará por correo electrónico al docente hasta el día antes de la presentación. En la clase siguiente el grupo expondrá durante 10 minutos sus funcionalidades y el desarrollo de las peticiones, pudiendo ser preguntado por el docente y los demás estudiantes.
+
+
 ## Autor
 
 - [@jsilgado](https://www.github.com/jsilgado)
