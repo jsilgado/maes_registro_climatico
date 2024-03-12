@@ -106,7 +106,7 @@ Crea un grupo de 3 personas por cercanía en el aula. Cada grupo elige una aplic
 
 Posteriormente se indica a cada persona del grupo a que rol de expertos van a pertenecer: A (Request), B (Response), C (Pruebas). 
 
-[Documentación de experto](https://github.com/jsilgado/maes_registro_climatico/blob/master/Actividad%204.pdf) 
+[Documentación de experto](https://github.com/jsilgado/maes_registro_climatico/blob/master/Actividad4.pdf) 
 
 - Estudio individual:  Cada estudiante desde su asiento, estudia en profundidad su parte, asegurándose de comprenderla completamente. Se recomienda tomar notas, realizar resúmenes y preparar preguntas.
 - Grupos de expertos: Los estudiantes del mismo grupo se reúnen en una parte del aula. Comparten sus conocimientos, debaten, resuelven dudas y se convierten en especialistas en su tema.
