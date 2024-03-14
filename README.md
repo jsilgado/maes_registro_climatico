@@ -71,10 +71,19 @@ Nota: se puede cambiar la extensión del fichero application.properties a applic
 #### Entrega: Sube el código a tu carpeta git con tu nombre en https://github.com/jsilgado/maes_registro_climatico/tree/master/alumnos
 
 ## Actividad 3 - Modelado de datos
+
+### Dependencias
+- Volviendo a https://start.spring.io/ selecciona las dependencias:
+![image](https://github.com/jsilgado/maes_registro_climatico/blob/master/images/SpringInitializrBBDD.png)
+
+Descarga el proyecto, accede a archivo pom.xml, copias la dependencia maven a nuestro proyecto.
+
+
+### Dominio
 - Crear un package "domain" quedando com.maes.domain
 - Crear las clases de entidades de dominio con sus atributos:
-#### Pais
 
+#### Pais
 
 | Attribute | Type     | Description                |
 | :-------- | :------- | :------------------------- |
@@ -100,6 +109,47 @@ Nota: se puede cambiar la extensión del fichero application.properties a applic
 | `mes` | `Integer` | **Required**. Mes del registro |
 | `temperatura` | `Double` | **Required**. Temperatura |
 
+- En nuestras clases de dominio Grupo y Contacto añadiremos las anotaciones de JPA (Java Persistence API)
+  
+
+```bash
+En la clase
+@Entity
+@Table(name = “nombre_de_tabla“)
+
+Por cada atributo
+@Column(name = “nombre_columna“)
+```
+
+### Repositorio: 
+- Crear un package repository quedando com.maes.repository.
+- Por cada tabla crear una interfaz tal que:
+  
+```bash
+@Repository
+public interface NombreTablaRepository extends JpaRepository<NombreTabla, Integer>
+```
+### Servicio: 
+- Crear un package service quedando com.maes.service.
+- Crear una clase PaisService,  con un método:
+
+```bash
+List<Pais> getPaises().
+```
+- Crear una clase controller PaisController,  con un método: 
+```bash
+@GetMapping("/paises")
+public ResponseEntity<List<Pais>> getAll() {
+   return Optional.ofNullable(paisService.getAll()).map(lst ->  ResponseEntity.ok().body(lst)) // 200 OK
+      .orElseGet(() -> ResponseEntity.notFound().build()); // 404 Not found
+}
+```
+
+- Desplegar la aplicación y acceder a [localhost:8090/paises](http://localhost:8090/paises) y visualizar el resultado en el navegador y en Postman
+- Realizar esta misma actividad pero para la entidad Ciudad.
+
+#### Entrega: Sube el código a tu carpeta git con tu nombre en https://github.com/jsilgado/maes_registro_climatico/tree/master/alumnos
+
 ## Actividad 4 - Estándares y buenas prácticas
 
 Crea un grupo de 3 personas por cercanía en el aula. Cada grupo elige una aplicación móvil o página web que les interese. Una vez elegida tendrán que elegir 4 funcionalidades que podría tener esa aplicación de tipo: obtención de datos con filtro y paginación, inserción, modificación o borrado de datos. Actividad similar realizada en la unidad 2.
@@ -113,6 +163,7 @@ Posteriormente se indica a cada persona del grupo a que rol de expertos van a pe
 - Intercambio de información: Los estudiantes regresan a sus grupos originales y se convierten en docentes de su pieza.
 
 Ejercicio: A partir de las funcionalidades seleccionadas anteriormente.
+
 **A. Request**: El objetivo es diseñar las llamadas request hacia el servidor para obtener datos, persistir o modificar. Por cada petición se requiere: URL, parámetros requeridos, parámetros opcionales y verbo http (GET, POST, UPDATE o DELETE).
 
 **B. Response**: Desarrollo de la lógica de negocio. Por cada petición:	json de salida, vódigos http posibles y qué entidades de la base de datos podrían estar involucradas.
