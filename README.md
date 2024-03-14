@@ -107,6 +107,7 @@ Descarga el proyecto, accede a archivo pom.xml, copias la dependencia maven a nu
 | `ciudad_id` | `Integer` | **Required**. FK Ciudad |
 | `anyo` | `Integer` | **Required**. Año del registro |
 | `mes` | `Integer` | **Required**. Mes del registro |
+| `dia` | `Integer` | **Required**. Mes del registro |
 | `temperatura` | `Double` | **Required**. Temperatura |
 
 - En nuestras clases de dominio Grupo y Contacto añadiremos las anotaciones de JPA (Java Persistence API)
