@@ -110,6 +110,7 @@ Descarga el proyecto, accede a archivo pom.xml, copias la dependencia maven a nu
 | `dia` | `Integer` | **Required**. Mes del registro |
 | `temperatura` | `Double` | **Required**. Temperatura |
 
+- En base de datos crea las tablas y carga los datos con el siguiente [script de carga](https://github.com/jsilgado/maes_registro_climatico/blob/master/sql.zip). 
 - En nuestras clases de dominio Grupo y Contacto añadiremos las anotaciones de JPA (Java Persistence API)
   
 
