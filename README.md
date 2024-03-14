@@ -95,7 +95,7 @@ Descarga el proyecto, accede a archivo pom.xml, copias la dependencia maven a nu
 | Attribute | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `ciudad_id` | `Integer` | **Required**. Identificador de ciudad |
-| `cuidad_id` | `Integer` | **Required**. FK Pais |
+| `pais_id` | `Integer` | **Required**. FK Pais |
 | `nombre` | `String` | **Required**. Nombre de la ciudad |
 
 #### Registro
